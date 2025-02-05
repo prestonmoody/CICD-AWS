@@ -38,7 +38,7 @@ jobs:
         # Install dependencies (e.g., pytest, Node.js, etc.)
         pip install pytest # Adjust for your testing framework
         # Run your tests
-        pytest tests/integration_tests.py
+        pytest tests/int.py
 
     - name: Terraform Destroy
       run: terraform destroy -auto-approve
