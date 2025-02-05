@@ -27,11 +27,11 @@ jobs:
 
     - name: Terraform Init
       run: terraform init
-      working-directory: terraform/
+      working-directory: /home/pmoody/week14/CICD-AWS
 
     - name: Terraform Apply
       run: terraform apply -auto-approve
-      working-directory: terraform/
+      working-directory: /home/pmoody/week14/CICD-AWS
 
     - name: Run Integration Tests
       run: |
